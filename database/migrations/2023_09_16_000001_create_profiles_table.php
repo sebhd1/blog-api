@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('socials')->nullable();
             $table->enum('status', ProfileStatus::values());
-            $table->text('description')->nullable();
+
 
 
             $table->foreignId('user_id')
