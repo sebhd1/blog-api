@@ -18,7 +18,6 @@ return new class extends Migration
             $table->foreignId('post_id')
             ->constrained('posts');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

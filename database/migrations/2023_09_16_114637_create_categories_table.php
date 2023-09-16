@@ -20,7 +20,6 @@ return new class extends Migration
                 ->constrained('posts');
 
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
