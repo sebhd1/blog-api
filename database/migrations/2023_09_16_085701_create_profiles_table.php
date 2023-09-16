@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('profile_image')->nullable();
+            $table->text('description')->nullable();
             $table->string('socials')->nullable();
             $table->enum('status', ProfileStatus::values());
             $table->text('description')->nullable();

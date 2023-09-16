@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('slug');
             $table->text('description')->nullable();
 
@@ -23,6 +23,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
