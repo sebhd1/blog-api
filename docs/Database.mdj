@@ -1406,7 +1406,7 @@
 											"top": 750,
 											"width": 167.16552734375,
 											"height": 13,
-											"text": "name: String",
+											"text": "name: String {unique}",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6199,7 +6199,7 @@
 								"$ref": "AAAAAAGKmSU0l2l7KnI="
 							},
 							"name": "name",
-							"type": "String"
+							"type": "String {unique}"
 						},
 						{
 							"_type": "UMLAttribute",
