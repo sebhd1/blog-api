@@ -19,8 +19,7 @@ return new class extends Migration
             $table->foreignId('user_id')
                 ->constrained('users');
 
-
-            $table->timestamps();
+            $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

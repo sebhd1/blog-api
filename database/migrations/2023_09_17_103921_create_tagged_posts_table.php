@@ -20,7 +20,8 @@ return new class extends Migration
             $table->foreignId('tag_id')
                 ->constrained('tags')
                 ->cascadeOnDelete();
-            $table->dateTime('created_at');
+
+            $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 
