@@ -503,7 +503,7 @@
 											"top": 727,
 											"width": 170.79638671875,
 											"height": 13,
-											"text": "Image: Img = null",
+											"text": "Image: String = null",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5936,7 +5936,7 @@
 								"$ref": "AAAAAAGKmOHQuWhpmao="
 							},
 							"name": "Image",
-							"type": "Img",
+							"type": "String",
 							"defaultValue": "null"
 						},
 						{
